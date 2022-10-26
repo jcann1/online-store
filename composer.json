@@ -1,0 +1,15 @@
+{
+    "name": "jeremiah/shop",
+    "require": {
+        "bramus/router": "~1.6",
+        "propel/propel": "~2.0@dev",
+        "symfony/http-client": "^5.4",
+        "respect/validation": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shop\\": "./App"
+        },
+        "classmap": ["App/Shop/Models"]
+    }
+}

@@ -1,0 +1,77 @@
+<database name="default" defaultIdMethod="native"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/1.6/database.xsd"
+          namespace="Shop\Models">
+          
+    <table name="user" phpName="User">
+        <column name="userId" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="username" type="varchar" size="25" required="true"/>
+        <column name="forename" type="varchar" size="25" required="true"/>
+        <column name="surname" type="varchar" size="25" required="true"/>
+        <column name="isBanned" type="boolean" required="true" defaultValue="false"/>
+        <column name="level" type="integer" required="true"/>
+        <column name="password" type="varchar" size="255" required="true"/>
+        <column name="twitterId" type="integer" required="false"/>
+
+        <foreign-key foreignTable="twitter" phpName="Twitter" refPhpName="Twitter">
+            <reference local="twitterId" foreign="twitterId"/>
+        </foreign-key>
+    </table>
+
+    <table name="twitter" phpName="Twitter">
+        <column name="twitterId" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="twitterApiId" type="varchar" size="50" required="true"/>
+        <column name="name" type="varchar" size="128" required="true"/>
+    </table>
+
+    <table name="product" phpName="Product">
+        <column name="productId" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="name" type="varchar" size="50" required="true"/>
+        <column name="description" type="varchar" size="100" required="true"/>
+        <column name="category" type="varchar" size="50" required="true"/>
+        <column name="quantity" type="integer" required="true" defaultValue="0"/>
+        <column name="price" type="double" required="true" />
+        <column name="imageUrl" type="varchar" size="255" required="true" defaultValue="product/default/default_product.png"/>
+        <column name="isDeleted" type="boolean" required="true" defaultValue="false"/>
+    </table>
+
+    <table name="discount" phpName="Discount">
+        <column name="discountId" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="dateValid" type="date" required="true"/>
+        <column name="code" type="varchar" size="30" required="true"/>
+        <column name="percentage" type="double" required="true" />
+        <column name="valid" type="boolean" required="true" defaultValue="1" />
+    </table>
+
+    <table name="purchase" phpName="Purchase">
+        <column name="purchaseId" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="userId" type="integer" required="false"/>
+        <column name="totalPrice" type="double" required="true"/>
+        <column name="totalAfterDiscount" type="double" required="true" default="0"/>
+        <column name="status" type="varchar" size="30" required="true" default="Paid" />
+        <column name="discountId" type="integer" required="false"/>
+
+        <foreign-key foreignTable="discount" phpName="Discount" refPhpName="Discount">
+            <reference local="discountId" foreign="discountId"/>
+        </foreign-key>
+
+        <foreign-key foreignTable="user" phpName="User" refPhpName="User">
+            <reference local="userId" foreign="userId"/>
+        </foreign-key>
+    </table>
+
+    <table name="product_purchase" isCrossRef="true">
+        <column name="productId" type="integer" primaryKey="true"/>
+        <column name="purchaseId" type="integer" primaryKey="true"/>
+        <column name="quantity" type="integer" default="1"/>
+
+        <foreign-key foreignTable="product">
+            <reference local="productId" foreign="productId"/>
+        </foreign-key>
+
+        <foreign-key foreignTable="purchase">
+            <reference local="purchaseId" foreign="purchaseId"/>
+        </foreign-key>
+    </table>
+
+</database>

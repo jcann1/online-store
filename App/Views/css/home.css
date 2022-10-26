@@ -1,0 +1,18 @@
+/* add your css here for home page */
+
+.card {
+    margin: 0px 12px;
+}
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-img-top {
+    max-width: 235px;
+    max-height: 235px;
+    margin: auto;
+    object-fit: contain;
+}

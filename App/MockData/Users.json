@@ -1,0 +1,72 @@
+[
+    {
+        "userId": "1",
+        "username": "johndoe@gmail.com",
+        "forename": "first",
+        "surname": "customer",
+        "level": 0,
+        "password": "customer",
+        "isBanned": false,
+        "twitterId": null
+    },
+    {
+        "userId": "2",
+        "username": "admin@hotmail.co.uk",
+        "forename": "first",
+        "surname": "admin",
+        "level": 1,
+        "password": "admin",
+        "isBanned": false,
+        "twitterId": null
+    },
+    {
+        "userId": "3",
+        "username": "superadmin@gmail.com",
+        "forename": "first",
+        "surname": "superadmin",
+        "level": 2,
+        "password": "superadmin",
+        "isBanned": false,
+        "twitterId": null
+    },
+    {
+        "userId": "4",
+        "username": "bobtake@gmail.com",
+        "forename": "bob",
+        "surname": "dun",
+        "level": 0,
+        "password": "taeker19",
+        "isBanned": false,
+        "twitterId": null
+    },
+    {
+        "userId": "5",
+        "username": "john123@hotmail.co.uk",
+        "forename": "john",
+        "surname": "doe",
+        "level": 0,
+        "password": "johndoe",
+        "isBanned": false,
+        "twitterId": null
+    },
+    {
+        "userId": "6",
+        "username": "karen123@gmail.com",
+        "forename": "karen",
+        "surname": "doe",
+        "level": 0,
+        "password": "karendoe",
+        "isBanned": false,
+        "twitterId": null
+    },
+    {
+        "userId": "7",
+        "username": "banned123@gmail.com",
+        "forename": "ban",
+        "surname": "ned",
+        "level": 0,
+        "password": "banned123",
+        "isBanned": true,
+        "twitterId": null
+    }
+]

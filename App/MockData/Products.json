@@ -1,0 +1,102 @@
+[
+    {
+        "productId": 1,
+        "name": "Men's Fjallraven Backpack",
+        "description": "Perfect backpack for everyday use",
+        "category": "Men's Clothing",
+        "quantity": 10,
+        "price": 40.00,
+        "imageUrl": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 2,
+        "name": "Men's Premium Casual Slim Fit T-Shirt",
+        "description":"Slim-fitting t-shirt, light weight & soft fabric",
+        "category": "Men's Clothing",
+        "quantity": 25,
+        "price": 25.00,
+        "imageUrl": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 3,
+        "name": "Men's Jacket",
+        "description": "Great outdoor jacket for all seasons, suitable for many occasions",
+        "category": "Men's Clothing",
+        "quantity": 50,
+        "price": 35.00,
+        "imageUrl": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 4,
+        "name": "Men's Casual Slim Fit",
+        "description": "Sleek design for all occasions, available in multiple colors",
+        "category": "Men's Clothing",
+        "quantity": 0,
+        "price": 29.00,
+        "imageUrl": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "isDeleted": 1
+    },
+    {
+        "productId": 5,
+        "name": "Women's Winter Coat",
+        "description": "Comfortable winter wear, provides wind protection and is water proof",
+        "category": "Women's Clothing",
+        "quantity": 10,
+        "price": 50.00,
+        "imageUrl": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 6,
+        "name": "Women's Leather Jacket",
+        "description": "2-For-One Hooded denim style faux leather jacket",
+        "category": "Women's Clothing",
+        "quantity": 5,
+        "price": 60.00,
+        "imageUrl": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 7,
+        "name": "Women's Raincoat",
+        "description": "Lightweight perfect for trip or casual wear & waterproof",
+        "category": "Women's Clothing",
+        "quantity": 10,
+        "price": 45.00,
+        "imageUrl": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 8,
+        "name": "Women's Short Sleeve",
+        "description": "Lightweight fabric with great stretch for comfort",
+        "category": "Women's Clothing",
+        "quantity": 20,
+        "price": 25.00,
+        "imageUrl": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+        "isDeleted": 0
+    },
+    {
+        "productId": 9,
+        "name": "Women's Short Sleeve V Neck",
+        "description": "Lightweight fabric & available in multiple colors",
+        "category": "Women's Clothing",
+        "quantity": 0,
+        "price": 15.00,
+        "imageUrl": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+        "isDeleted": 1
+    },
+    {
+        "productId": 10,
+        "name": "Women's T-shirt Casual Cotton",
+        "description": "Lightweight perfect for trip or casual wear",
+        "category": "Women's Clothing",
+        "quantity": 50,
+        "price": 20.00,
+        "imageUrl": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+        "isDeleted": 0
+    }
+]
